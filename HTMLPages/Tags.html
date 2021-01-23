@@ -1,25 +1,103 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<!-- use 10 different tags from this list with 
+        about two different tag types from each category 
+        to create a wide variety of different html elements 
+        https://www.w3schools.com/tags/ref_byfunc.asp -->
 
-    </head>
+<!-- Add Styles Here (Optional)-->
+<style>
+    /*Class for Preston's div tag*/
+    
+    #PrestonDiv {
+        background-color: grey;
+        font-family: monospace;
+        color: white;
+    }
+    /*Aligns Text*/
+    
+    .textAlign {
+        text-align: center;
+    }
+</style>
+<!-- Add Scripts Here (Optional)-->
+<script>
+    function buttonFunction() {
+        var x = document.getElementById("UselessOutput");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+
+<head>
+
+</head>
+<main>
 
     <body>
+        <!-- Preston's Section -->
+        <div id="PrestonDiv">
 
-        <h1>Preston Valles</h1>
+            <head>
+                <em>
+                    <h1>Preston Valles</h1>
+                    <a a href=index.html>
+                        <h3>Return to Index</h3>
+                    </a>
+                </em>
+            </head>
+            <main>
+
+                <body>
+                    <strong>
+                        <p>STRONG TEXT</p>
+                    </strong>
+                    <small>
+                        <p>small text</p>
+                    </small>
+                    <p>Here's a button below</p>
+                    <button onclick="buttonFunction()">Press Me</button>
+                    <div id="UselessOutput">
+                        <ol>
+                            <h3>4 Reasons to not press the button above</h3>
+                            <li>It's useless</li>
+                            <li>It won't do anything</li>
+                            <li>Your life will not progress by pressing it</li>
+                            <li>This text will simply disappear then re-appear</li>
+                        </ol>
+                    </div>
+                </body>
+            </main>
+            <footer>
+                Author: Preston Valles &nbsp;Jan 23, 2021
+            </footer>
+        </div>
+        <!-- Preston's Section -->
 
         <hr>
 
+        <!-- Tyler M's Section -->
         <h1>Tyler Mitchell</h1>
+        <!-- Tyler M's Section -->
 
         <hr>
 
+        <!-- Jaeden's Section -->
         <h1>Jaeden Greene</h1>
+        <!-- Jaeden's Section -->
 
         <hr>
 
+        <!-- Tyler N's Section -->
         <h1>Tyler Noe</h1>
+        <!-- Tyler N's Section -->
 
+        <hr>
 
     </body>
+</main>
+
 </html>
