@@ -4,14 +4,33 @@
         #centeredText {
             text-align: center;
         }
+        
+        .container {
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+            line-height: 115px;
+        }
+        
+        .resize_fit_center {
+            display: block;
+            margin-left: 321%;
+            /*margin-right: auto;*/
+            width: 100%;
+        }
     </style>
 
     <head>
-        <h1 id="centeredText">Preston's Page!</h1>
-        <p id="centeredText">Hi I'm Preston and this is my personal page.</p>
-        <p id="centeredText">I'm currently the project lead for this project. My responsibilites have consisted of getting our group together through discord, setting up a work schedule, configuring our github repo and making my contributions to the project. I don't know
-            exactly what to put in this page so heres some random stuff
-        </p>
+        <div>
+            <h1 id="centeredText">Preston's Page!</h1>
+            <div id="imageContainer" class="container">
+                <img src="https://media1.tenor.com/images/4210100ac22eaaba6982b3002fa78148/tenor.gif?itemid=18434133" class="resize_fit_center" alt="Gif of Chuck from Dead Rising">
+            </div>
+            <p id="centeredText">Hi I'm Preston and this is my personal page.</p>
+            <p id="centeredText">I'm currently the project lead for this project. My responsibilites have consisted of getting our group together through discord, setting up a work schedule, configuring our github repo and making my contributions to the project. I don't know
+                exactly what to put in this page so heres some random stuff
+            </p>
+        </div>
 
     </head>
 
