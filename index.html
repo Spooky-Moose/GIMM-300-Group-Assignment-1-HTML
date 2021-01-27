@@ -25,12 +25,40 @@
             padding-top: 0%;
             padding-bottom: 0%;
         }
+        
+        @keyframes spinner {
+            from {
+                -moz-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+            }
+            to {
+                -moz-transform: rotateY(-360deg);
+                -ms-transform: rotateY(-360deg);
+                transform: rotateY(-360deg);
+            }
+        }
+        
+        #spinner {
+            -webkit-animation-name: spinner;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-duration: 6s;
+            animation-name: spinner;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 6s;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
     </style>
     <h3>Click play to totally not get Rick Rolled</h3>
     <audio controls autoplay>
         <source src="Images/Audio/Never Gonna Give You Up Original.mp3" type="audio/mp3">
     </audio>
-    <img src="Images/HTMLHandymen.png" alt="HTML Handyman Logo" class="resize_fit_center">
+    <img id="spinner" src="Images/HTMLHandymen.png" alt="HTML Handyman Logo" class="resize_fit_center">
     <!--<b>
         <h1 style="text-align: center;">The HTML Handymen</h1>
     </b>-->
