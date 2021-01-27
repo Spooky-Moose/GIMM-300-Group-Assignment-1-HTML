@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
     <style>
@@ -14,14 +15,61 @@
             padding: 0;
             margin: 0;
         }
+        
+        .resize_fit_center {
+            display: block;
+            width: 700px;
+            height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 0%;
+            padding-bottom: 0%;
+        }
+        
+        .fit_center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* Source: https://www.the-art-of-web.com/css/3d-transforms/ */
+        
+        @keyframes spinner {
+            from {
+                -moz-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+            }
+            to {
+                -moz-transform: rotateY(-360deg);
+                -ms-transform: rotateY(-360deg);
+                transform: rotateY(-360deg);
+            }
+        }
+        /* Source: https://www.the-art-of-web.com/css/3d-transforms/ */
+        
+        #spinner {
+            -webkit-animation-name: spinner;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-duration: 6s;
+            animation-name: spinner;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 6s;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
     </style>
-    <h3>Click play to totally not get Rick Rolled</h3>
-    <audio controls autoplay>
+    <h3 style="text-align: center;">Click play to totally not get Rick Rolled</h3>
+    <audio controls autoplay class="fit_center">
         <source src="Images/Audio/Never Gonna Give You Up Original.mp3" type="audio/mp3">
     </audio>
-    <b>
+    <img id="spinner" src="Images/HTMLHandymen.png" alt="HTML Handyman Logo" class="resize_fit_center">
+    <!--<b>
         <h1 style="text-align: center;">The HTML Handymen</h1>
-    </b>
+    </b>-->
     <p style="text-align: center;">We are The HTML Handymen of GIMM 300! We are the only group in all of GIMM with two Tylers! Please explore our website and enjoy.</p>
 </head>
 
