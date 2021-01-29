@@ -5,17 +5,25 @@
 
 <head>
     <style>
+        :root {
+            background-image: url('https://cdn.pixabay.com/photo/2017/02/10/16/29/abstract-2055567_1280.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+
+        }
+
         #menu li {
             display: inline;
         }
-        
+
         ul {
             text-align: center;
             list-style-type: none;
             padding: 0;
             margin: 0;
         }
-        
+
         .resize_fit_center {
             display: block;
             width: 800px;
@@ -25,28 +33,31 @@
             padding-top: 0%;
             padding-bottom: 0%;
         }
-        
+
         .fit_center {
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
+
         /* Source: https://www.the-art-of-web.com/css/3d-transforms/ */
-        
+
         @keyframes spinner {
             from {
                 -moz-transform: rotateY(0deg);
                 -ms-transform: rotateY(0deg);
                 transform: rotateY(0deg);
             }
+
             to {
                 -moz-transform: rotateY(-360deg);
                 -ms-transform: rotateY(-360deg);
                 transform: rotateY(-360deg);
             }
         }
+
         /* Source: https://www.the-art-of-web.com/css/3d-transforms/ */
-        
+
         #spinner {
             -webkit-animation-name: spinner;
             -webkit-animation-timing-function: linear;
@@ -63,7 +74,7 @@
         }
     </style>
 
-    
+
 
     <h3 style="text-align: center;">Click Play</h3>
     <audio controls autoplay class="fit_center">
@@ -73,7 +84,8 @@
     <!--<b>
         <h1 style="text-align: center;">The HTML Handymen</h1>
     </b>-->
-    <p style="text-align: center;">We are The HTML Handymen of GIMM 300! We are the only group in all of GIMM with two Tylers! Please explore our website and enjoy.</p>
+    <p style="text-align: center;">We are The HTML Handymen of GIMM 300! We are the only group in all of GIMM with two
+        Tylers! Please explore our website and enjoy.</p>
 </head>
 
 <body>
