@@ -8,43 +8,47 @@
 <!-- Add Styles Here (Optional)-->
 <style>
     /*Class for Preston's div tag*/
-    
+    html {
+        overflow-y: scroll;
+    }
+
     #PrestonDiv {
         background-color: rgb(18, 100, 55);
         font-family: monospace;
         color: white;
     }
+
     /*Aligns Text*/
-    
+
     #TylerNDiv {
         background-color: crimson;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: black;
     }
 
-    #JaedenGDiv{
+    #JaedenGDiv {
         background-image: url('https://cdn.pixabay.com/photo/2017/06/04/18/14/marble-2371776_960_720.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
         font-family: "Lucida Console", monospace;
-        color:black;
+        color: black;
         border-color: rgb(81, 0, 128);
         border-width: 3px;
         border-style: solid;
     }
-    
+
     .textAlign {
         text-align: center;
     }
-    
+
     #menu li {
         display: inline;
         background-color: rgb(255, 190, 136);
         padding: 5px 10px;
         margin: 0;
     }
-
+    /*Navbar CSS*/
     #menu {
         text-align: center;
         list-style-type: none;
@@ -59,9 +63,10 @@
         display: inline-block;
     }
 
-    a:hover{
+    a:hover {
         color: #666666;
     }
+    /*Navbar CSS end*/
 </style>
 
 <!-- Add Scripts Here (Optional)-->
@@ -83,30 +88,30 @@
 
     <div>
         <nav>
-    
+
             <ul id="menu">
-    
+
                 <li><a href="../index.html" style="color: #666666;">home</a></li>
-    
+
                 <li><a href="Tags.html">tag examples</a></li>
-    
+
                 <li><a href="nested.html">nested examples</a></li>
-    
+
                 <li><a href="attributes.html">attribute examples</a></li>
-    
+
                 <li><a href="TylerNoe.html">Tyler Noe</a></li>
-    
+
                 <li style="margin-right: 5px;">
                     <a href="TylerMitchell.html">Tyler Mitchell</a>
                 </li>
-    
+
                 <li><a href="PrestonValles.html">Preston Valles</a></li>
-    
+
                 <li>
                     <a href="JaedenGreene.html">Jaeden Greene</a>
                 </li>
-    
-    
+
+
         </nav>
     </div>
 </head>
@@ -192,29 +197,32 @@
 
         <!-- Jaeden's Section -->
         <div id="JaedenGDiv">
-            
+
             <head>
                 <h1>
-                    <img src="https://media.giphy.com/media/jXBwoFfPsCCoE/giphy.gif" alt="Weefee" style="float:right;width:60px;height:60px;">
+                    <img src="https://media.giphy.com/media/jXBwoFfPsCCoE/giphy.gif" alt="Weefee"
+                        style="float:right;width:60px;height:60px;">
                     Jaeden Greene
                 </h1>
                 <a href="JaedenGreene.html"><b><u>My Page is v e r y cool</u></b></a>
                 <p><em><b>
-                    <img src="https://media.giphy.com/media/g6elFVmFHMqImThFAD/giphy.gif" alt="Arrow Up" style="float:left;width:42px;height:42px;">
-                    That's a link up there
-                </em></p></b>
+                            <img src="https://media.giphy.com/media/g6elFVmFHMqImThFAD/giphy.gif" alt="Arrow Up"
+                                style="float:left;width:42px;height:42px;">
+                            That's a link up there
+                    </em></p></b>
             </head>
             <main>
 
                 <body>
-                    
+
                     <p><small>This text is quite small...</small></p>
                     <p><strong>Hmm this text seems quite <em>strong.</em></strong></p>
                     <p><em>You can tell this text is emphasized cause the way it is.</em></p>
                     <p><b><em><u><strong><s>This text has a lot of modifiers for no reason</s></strong></u></em></b></p>
 
                     <h3>
-                        <img src="https://media.giphy.com/media/RjxWM9GO0REPUGEK2L/giphy.gif" alt="Audio" style="float:right;width:60px;height:60px;">
+                        <img src="https://media.giphy.com/media/RjxWM9GO0REPUGEK2L/giphy.gif" alt="Audio"
+                            style="float:right;width:60px;height:60px;">
                         Music Genres I enjoy
                     </h3>
                     <form action="/action_page.php">
@@ -230,7 +238,7 @@
                         <label for="Genre5"> Metal</label><br>
                         <input type="checkbox" name="Genre6" value="Indie" checked>
                         <label for="Genre6"> Indie</label><br>
-                      </form>
+                    </form>
 
                 </body>
 
@@ -255,7 +263,9 @@
                     <strong>
                         <h2>Top 5 Favorite Games</h2>
                     </strong>
-                    <small><h3></h3>In no particular order...</h3></small>
+                    <small>
+                        <h3></h3>In no particular order...</h3>
+                    </small>
                     <ol>
                         <li>The Witcher 3: Wild Hunt</li>
                         <li>Bloodborne</li>
