@@ -50,16 +50,19 @@
         font-family: Helvetica;
         color: white;
     }
+
     /*rotation animation*/
-    @keyframes spin{
-        from{
-            transform:rotate(0deg);
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
         }
-        to{
-            transform:rotate(360deg);
+
+        to {
+            transform: rotate(360deg);
         }
     }
-    #rotationImage{
+
+    #rotationImage {
         width: 200px;
         height: 200px;
         animation-name: spin;
@@ -106,66 +109,78 @@
 </head>
 
 <body>
-    <!--Preston's Section-->
-    <div id="prestonDiv">
-        <h2
-            style="text-align: center; background-color: rgba(169, 169, 169, 0.5); width: 500px; height: 25px; margin: 15px auto; padding: 10px;">
-            Preston's Attributes <em>IN SPACE</em></h2>
-        <div id="floatingAstronaut">
-            <marquee behavior="alternate" scrollamount="10" direction="right">
-                <img src="https://media.tenor.com/images/f4bc05c59a6b84c909a8ce963ee2acb0/tenor.gif" alt="Astronaut" />
-            </marquee>
+    <main>
+        <!--Preston's Section-->
+        <div id="prestonDiv" spellcheck="true">
+            <h2
+                style="text-align: center; background-color: rgba(169, 169, 169, 0.5); width: 500px; height: 25px; margin: 15px auto; padding: 10px;">
+                Preston's Attributes <em>IN SPACE</em></h2>
+            <div id="floatingAstronaut" draggable="true" class="#" title="this div holds the astronaut gif">
+                <marquee behavior="alternate" scrollamount="10" direction="right">
+                    <img src="https://media.tenor.com/images/f4bc05c59a6b84c909a8ce963ee2acb0/tenor.gif" alt="Astronaut"
+                        title="This is a floating astronaut. Poor astronaut." />
+                </marquee>
+            </div>
+            <div id="Fortnite">
+                <marquee behavior="alternate" scrollamount="15" direction="left">
+                    <img id="rotationImage"
+                        src="https://media.tenor.com/images/79c9011d0ec39c8ceaf2683ff12eb5a0/tenor.gif" alt="Fortnite"
+                        lang="en-US" draggable="false" />
+                </marquee>
+            </div>
         </div>
-        <div id="Fortnite">
-            <marquee behavior="alternate" scrollamount="15" direction="left">
-                <img id="rotationImage" src="https://media.tenor.com/images/79c9011d0ec39c8ceaf2683ff12eb5a0/tenor.gif" alt="Fortnite"/>
-            </marquee>
-        </div>
-    </div>
-    <!--Preston's Section-->
-    <hr>
-    <!--Jaeden's Section-->
-    <h2>Jaeden</h2>
-    <!--Jaeden's Section-->
-    <hr>
-    <!--Tyler M's Section-->
-    <h2>Tyler M</h2>
+        <!--Preston's Section-->
+        <hr>
+        <!--Jaeden's Section-->
+        <h2>Jaeden</h2>
+        <!--Jaeden's Section-->
+        <hr>
+        <!--Tyler M's Section-->
+        <h2>Tyler M</h2>
 
-    <div>
+        <div>
             <p>What is better Bloodborne or Dark Souls?</p>
-        <input type="checkbox" name="Bloodborne" value="Blood">
-        <label for="vehicle1"> Bloodborne</label><br>
-        <input type="checkbox" name="Dark Souls" value="Souls">
-        <label for="vehicle2"> Dark Souls</label><br> 
+            <input type="checkbox" name="Bloodborne" value="Blood">
+            <label for="vehicle1"> Bloodborne</label><br>
+            <input type="checkbox" name="Dark Souls" value="Souls">
+            <label for="vehicle2"> Dark Souls</label><br>
 
-        <p font-family: chiller style="color: rgb(110, 66, 7);">Rusty metal isnt good to be poked with (this is rusty orange).</p>
+            <p font-family: chiller style="color: rgb(110, 66, 7);">Rusty metal isnt good to be poked with (this is
+                rusty
+                orange).</p>
 
-        <p style="color: rgb(134, 25, 6);"><strong>I am Bloodnofsky! I killed a thousand before and I'll kill a thousand more! Now tremble before your death! For be it my mask, or your blood, red will be the last color you ever see!</strong> -Green Hornet</p>
+            <p style="color: rgb(134, 25, 6);"><strong>I am Bloodnofsky! I killed a thousand before and I'll kill a
+                    thousand
+                    more! Now tremble before your death! For be it my mask, or your blood, red will be the last color
+                    you
+                    ever see!</strong> -Green Hornet</p>
 
-        <p style="color: rgb(96, 98, 99);">We are born of the blood, made men by the blood, undone by the blood. Our eyes are yet to open fear the old blood! -Master Willem</p>
+            <p style="color: rgb(96, 98, 99);">We are born of the blood, made men by the blood, undone by the blood. Our
+                eyes are yet to open fear the old blood! -Master Willem</p>
 
-        <img src="https://cdn.wccftech.com/wp-content/uploads/2015/03/Bloodborne-62-2060x1159.jpg"
-        width="650" height="480" alt="Bloodborne is slightly stuck in my head">
-    </div>
-    <!--Tyler M's Section-->
-    <hr>
-    <!--Tyler N's Section-->
-    <h2><strong>Tyler Noe's attributes of attribute-ness</strong></h2>
-    <div>
-        <img src="https://hedgehoghs.com/wp-content/uploads/2017/07/cropped-decks-fences-handyman_services-airdrie-cochrane-calgary.jpg"
-            width="720" height="480" alt="Handymen pun index link">
-        <h3>I am quite <a href="../index.html">HANDY</a> with titles as you can see...</h3>
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2015/03/Bloodborne-62-2060x1159.jpg" width="650"
+                height="480" alt="Bloodborne is slightly stuck in my head">
+        </div>
+        <!--Tyler M's Section-->
+        <hr>
+        <!--Tyler N's Section-->
+        <h2><strong>Tyler Noe's attributes of attribute-ness</strong></h2>
+        <div>
+            <img src="https://hedgehoghs.com/wp-content/uploads/2017/07/cropped-decks-fences-handyman_services-airdrie-cochrane-calgary.jpg"
+                width="720" height="480" alt="Handymen pun index link">
+            <h3>I am quite <a href="../index.html">HANDY</a> with titles as you can see...</h3>
 
-        <p style="color: deepskyblue;">Here is some happy, chill vibe kind of sky blue text.</p>
+            <p style="color: deepskyblue;">Here is some happy, chill vibe kind of sky blue text.</p>
 
-        <p style="color: tomato;">Now have some tomato orange test? red? whichever color you prefer.</p>
+            <p style="color: tomato;">Now have some tomato orange test? red? whichever color you prefer.</p>
 
-        <p style="color: blueviolet;">And lastly some blue violet.</p>
+            <p style="color: blueviolet;">And lastly some blue violet.</p>
 
-        <img src="https://i.pinimg.com/originals/0d/d5/96/0dd5961f5782b4e89093c9813a1c5a98.gif"
-            alt="take a rest undead">
-    </div>
-    <!--Tyler N's Section-->
+            <img src="https://i.pinimg.com/originals/0d/d5/96/0dd5961f5782b4e89093c9813a1c5a98.gif"
+                alt="take a rest undead">
+        </div>
+        <!--Tyler N's Section-->
+    </main>
 </body>
 
 </html>
