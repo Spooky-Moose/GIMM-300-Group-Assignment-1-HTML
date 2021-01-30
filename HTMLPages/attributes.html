@@ -41,6 +41,32 @@
     a:hover {
         color: #666666;
     }
+
+    #prestonDiv {
+        background-image: url('https://cdn.pixabay.com/photo/2017/08/15/08/23/galaxy-2643089_960_720.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        font-family: Helvetica;
+        color: white;
+    }
+    /*rotation animation*/
+    @keyframes spin{
+        from{
+            transform:rotate(0deg);
+        }
+        to{
+            transform:rotate(360deg);
+        }
+    }
+    #rotationImage{
+        width: 200px;
+        height: 200px;
+        animation-name: spin;
+        animation-duration: 4000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
 </style>
 
 
@@ -81,7 +107,21 @@
 
 <body>
     <!--Preston's Section-->
-    <h2>Preston</h2>
+    <div id="prestonDiv">
+        <h2
+            style="text-align: center; background-color: rgba(169, 169, 169, 0.5); width: 500px; height: 25px; margin: 15px auto; padding: 10px;">
+            Preston's Attributes <em>IN SPACE</em></h2>
+        <div id="floatingAstronaut">
+            <marquee behavior="alternate" scrollamount="10" direction="right">
+                <img src="https://media.tenor.com/images/f4bc05c59a6b84c909a8ce963ee2acb0/tenor.gif" alt="Astronaut" />
+            </marquee>
+        </div>
+        <div id="Fortnite">
+            <marquee behavior="alternate" scrollamount="15" direction="left">
+                <img id="rotationImage" src="https://media.tenor.com/images/79c9011d0ec39c8ceaf2683ff12eb5a0/tenor.gif" alt="Fortnite"/>
+            </marquee>
+        </div>
+    </div>
     <!--Preston's Section-->
     <hr>
     <!--Jaeden's Section-->
@@ -105,7 +145,8 @@
 
         <p style="color: blueviolet;">And lastly some blue violet.</p>
 
-        <img src="https://i.pinimg.com/originals/0d/d5/96/0dd5961f5782b4e89093c9813a1c5a98.gif" alt="take a rest undead">
+        <img src="https://i.pinimg.com/originals/0d/d5/96/0dd5961f5782b4e89093c9813a1c5a98.gif"
+            alt="take a rest undead">
     </div>
     <!--Tyler N's Section-->
 </body>
