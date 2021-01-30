@@ -21,6 +21,24 @@
         text-align: center;
     }
 
+    .center_GC {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 400px;
+        height: 400px;
+    }
+
+    .center_Div {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
     .container {
         margin: 10px;
         width: 200px;
@@ -60,6 +78,12 @@
 
     a:hover {
         color: #666666;
+    }
+
+    .wrapper {
+        margin-left: auto;
+        margin-right: auto;
+
     }
 
     /*Navbar CSS end*/
@@ -111,7 +135,7 @@
                 class="resize_fit_center " alt="Gif of Chuck from Dead Rising ">
             <!--</div>-->
             <div
-                style="background-color: rgba(11, 9, 20, 0.9); margin: 0px 300px 0px 300px; padding: 10px 0px 10px 0px;">
+                style="background-color: rgba(11, 9, 20, 0.9); margin: auto; padding: 10px 0px 10px 0px; width: 1000px; height: 120px;">
                 <p id="centeredText">Hi I'm Preston and this is my personal page.</p>
                 <blockquote>
                     <p id="centeredText">I'm currently the project lead for this project. My responsibilites have
@@ -131,7 +155,8 @@
         <div id="aboutMeDiv">
             <h1>About Me</h1>
             <hr>
-            <div style="background-color: rgba(11, 9, 20, 0.9); margin-right: 1200px;">
+            <div
+                style="background-color: rgba(11, 9, 20, 0.9); margin-right: 1200px; padding: 1px 0px 10px; width: 300px; height: 255px;">
                 <h3>Favorite Games</h3>
                 <ul>
                     <li>Halo</li>
@@ -144,7 +169,8 @@
                     <li>Minecraft <small>(who doesn't play Minecraft?)</small></li>
                 </ul>
             </div>
-            <div style="background-color: rgba(11, 9, 20, 0.9); margin-right: 500px;">
+            <div
+                style="background-color: rgba(11, 9, 20, 0.9); margin-right: 500px; padding: 1px 0px 10px; width: 1150px; height:300px;">
                 <h3>Games That Suck</h3>
                 <ul>
                     <li><b>Ride To Hell: Retribution</b></li>
@@ -168,10 +194,18 @@
 
     </body>
     <hr>
-    <div>
-        <h3 id="centeredText ">Here is a snake game I made awhile ago</h3>
-        <p id="centeredText ">W A S D to control</p>
-        <canvas id="gc" width="400" height="400"></canvas>
+
+    <img src="https://media.tenor.com/images/3457451f5db173df357c8e81ebe72fa7/tenor.gif" alt="Kraft Punk"
+        style="float: left; width: 300px; height: 300px; margin: 100px auto auto 150px;" />
+    <img src="https://media.tenor.com/images/d17511a1ed9cfe559751ec09b18e1a84/tenor.gif" alt="Kraft Punk"
+        style="float: right; width: 300px; height: 300px; margin: 100px 150px auto auto;" />
+    <div
+        style="background-color: rgba(11, 9, 20, 0.9); margin: 0px 700px 0px 700px; padding: 5px 0px 10px; width: 500px; height: 500px;">
+        <h3 id="centeredText">Here is a snake game I made awhile ago</h3>
+        <p id="centeredText">W A S D to control
+
+        </p>
+        <canvas id="gc" width="400" height="400" class="center_GC"></canvas>
         <script>
             window.onload = function () {
                 canv = document.getElementById("gc");
